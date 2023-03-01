@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Water Reminder</string>
+    <string name="settings_name">Settings</string>
+    <string name="info_name">Info</string>
+    <string name="calendar_name">Calendar</string>
+    <string name="add_water">Add water in ml</string>
+    <string name="water_total">Total</string>
+    <string name="edit_age">Age in years</string>
+    <string name="edit_weight">Weight in kg</string>
+    <string name="textview_estimate">Estimated water</string>
+    <string name="textview_shoulddrink">You should drink daily</string>
+    <string name="textview_liters">liters</string>
+    <string name="textview_age">years</string>
+    <string name="textview_weight">kg</string>
+    <string name="info_text">Drinking at least 8 glasses of water a day is essential
+        for maintaining good health and hydration. Make sure to drink water regularly
+        throughout the day, monitor the quality of your drinking water, and avoid relying
+        on sugary drinks. During exercise, drink water before, during, and after to stay hydrated,
+        and watch for signs of dehydration. Avoid overhydration as it can be dangerous.
+        In addition to drinking enough water, it is important to pay attention to the quality of
+        your drinking water. If you are not sure about the quality of your tap water, consider using
+        a water filter or drinking bottled water. It is also important to be aware of the signs of
+        dehydration, such as thirst, dry mouth, dark urine, fatigue, and headache, and to drink water
+        immediately if you experience any of these symptoms.
+      </string>
+    <string name="remind_me">Remind me to drink </string>
+    <string name="show_daily_consumption">Click the date to see your daily water consumption</string>
+</resources>
