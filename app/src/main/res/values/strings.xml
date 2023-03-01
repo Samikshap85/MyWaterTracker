@@ -20,6 +20,6 @@
         In addition to drinking enough water, it is important to pay attention to the quality of
         your drinking water.
       </string>
-    <string name="remind_me">Remind me to drink </string>
+    <string name="remind_me">Remind me after 2 hours</string>
     <string name="show_daily_consumption">Click the date to see your daily water consumption</string>
 </resources>

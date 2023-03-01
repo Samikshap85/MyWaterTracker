@@ -99,12 +99,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             float value = Float.parseFloat(editTextWaterAmount.getText().toString());
             float total_value = counterDrinkWater.getDrankWaterValue();
-            if (value > 6000 || total_value + value >= 7000){
+            if (value > 1000 ){
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
                 builder.setCancelable(true);
                 builder.setTitle("Wait a minute");
-                builder.setMessage("You shouldn't drink that much at a time!\nIf you really did, please contact your doctor.");
+                builder.setMessage("You shouldn't drink more than 1 liter of water at once.");
 
                 builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                     @Override
@@ -115,6 +115,23 @@ public class MainActivity extends AppCompatActivity {
 
                 builder.show();
             }
+            else if (total_value + value >6000){
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+
+                builder.setCancelable(true);
+                builder.setTitle("Wait a minute");
+                builder.setMessage("You shouldn't drink that much normally!\nIf you really want to, please contact your doctor.");
+
+                builder.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+
+                builder.show();
+            }
+
             else{
                 counterDrinkWater.addDrankWater(value);
                 Toast.makeText(MainActivity.this, "Good job!", Toast.LENGTH_SHORT).show();
